@@ -5,11 +5,11 @@
   },
   {
     "ParameterKey": "AMI",
-    "ParameterValue": "ami-03d5c68bab01f3496"
+    "ParameterValue": "ami-0c2d06d50ce30b442"
   },
   {
     "ParameterKey": "InstanceType",
-    "ParameterValue": "t2.large"
+    "ParameterValue": "t2.micro"
   },
   {
     "ParameterKey": "keyname",
@@ -17,6 +17,6 @@
   },
   {
     "ParameterKey": "SecurityGroupsList",
-    "ParameterValue": "sg-0784ca19a4675489b"
+    "ParameterValue": "sg-0a5930b796bdf81ad"
   }
 ]
