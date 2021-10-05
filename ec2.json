@@ -36,9 +36,7 @@
 				],
 				"UserData": {
 					"Base64": 
-						"#!/bin/bash -ex\\n
-						# put your script here\\n
-						touch /tmp/itworks.txt"
+						"#!/bin/bash -ex\\n# put your script here\\ntouch /tmp/itworks.txt"
 				},
 				"Tags": [
 					{
