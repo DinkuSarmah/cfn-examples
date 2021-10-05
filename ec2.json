@@ -35,11 +35,10 @@
 					{"Ref": "SecurityGroupsList"}
 				],
 				"UserData": {
-					"Base64": [
-						"#!/bin/bash -ex\\n",
-						"# put your script here\\n",
-						"touch /tmp/itworks.txt"
-					]
+					"Base64": 
+						"#!/bin/bash -ex\\n
+						# put your script here\\n
+						touch /tmp/itworks.txt"
 				},
 				"Tags": [
 					{
