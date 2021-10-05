@@ -44,7 +44,7 @@
 				"Tags": [
 					{
 						"Key": "Name",
-						"Value": {"Ref": "Servername"}
+						"Value": {"Ref": "ServerName"}
 					} 
 				]
 			}
