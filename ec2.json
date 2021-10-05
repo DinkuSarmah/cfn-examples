@@ -34,10 +34,7 @@
 				"SecurityGroupIds": [
 					{"Ref": "SecurityGroupsList"}
 				],
-				"UserData": {
-					"Base64": 
-						"#!/bin/bash -ex\\n# put your script here\\ntouch /tmp/itworks.txt"
-				},
+				"UserData": "#!/bin/bash -ex\\n# put your script here\\ntouch /tmp/itworks.txt",
 				"Tags": [
 					{
 						"Key": "Name",
