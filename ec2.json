@@ -1,0 +1,53 @@
+{
+	"Parameters": {
+		"ServerName": {
+			"Description": "ServerName to be set",
+			"Type": "String"
+		},
+		"keyname": {
+			"Description": "Pick the key",
+			"Type": "AWS::EC2::KeyPair::KeyName"
+		},
+		"AMI": {
+			"Description": "AMI details",
+			"Type": "AWS::EC2::Image::Id"
+		},
+		"InstanceType": {
+			"Description": "Server Type",
+			"Type": "String"
+		},
+		"SecurityGroupsList": {
+			"Description": "SG details",
+			"Type": "String"
+		}
+	},
+	"Resources": {
+		"myEC2Instance": {
+			"Type": "AWS::EC2::Instance",
+			"Prroperties": {
+				"KeyName": {"Ref": "keyname"},
+				"DisableApiTermination": false,
+				"ImageId": {"Ref": "AMI"},
+				"SubnetId": "subnet-057fa6d2c950beb6f",
+				"InstanceType": {"Ref": "InstanceType"},
+				"Monitoring": false,
+				"SecurityGroupIds": [
+					{"Ref": "SecurityGroupsList"}
+				],
+				"UserData": {
+					"Base64": [
+						"#!/bin/bash -ex\\n",
+						"# put your script here\\n",
+						"touch /tmp/itworks.txt"
+					]
+				},
+				"Tags": [
+					{
+						"Key": "Name",
+						"Value": {"Ref": "Servername"}
+					} 
+				]
+			}
+		}
+	}
+}
