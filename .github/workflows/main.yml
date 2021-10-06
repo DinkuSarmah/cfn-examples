@@ -18,7 +18,7 @@ jobs:
       env:
         AWS_REGION: us-west-2
         STACK_NAME: cfn-deploy
-        TEMPLATE_FILE: ec2.json
+        TEMPLATE_FILE: nested_stack.json
         PARAMETERS_FILE: parameter.json
         CAPABLITIES: CAPABILITY_IAM
         AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
