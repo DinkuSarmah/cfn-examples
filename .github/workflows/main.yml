@@ -17,9 +17,9 @@ jobs:
     - uses: DinkuSarmah/cfn-deploy@master
       env:
         AWS_REGION: us-west-2
-        STACK_NAME: cfn-deploy
+        STACK_NAME: cfn-deploy-nested
         TEMPLATE_FILE: nested_stack.json
-        PARAMETERS_FILE: parameter.json
+        #PARAMETERS_FILE: parameter.json
         CAPABLITIES: CAPABILITY_IAM
         AWS_ACCESS_KEY_ID: ${{secrets.AWS_ACCESS_KEY_ID}}
         AWS_SECRET_ACCESS_KEY: ${{secrets.AWS_SECRET_ACCESS_KEY}}
