@@ -4,7 +4,7 @@
         "myStack" : {
 	       "Type" : "AWS::CloudFormation::Stack",
 	       "Properties" : {
-	        "TemplateURL" : "https://s3.amazonaws.com/cloudformation-templates-us-east-1/S3_Bucket.template",
+	        "TemplateURL" : "https://raw.githubusercontent.com/DinkuSarmah/cfn-examples/master/s3-template.json",
               "TimeoutInMinutes" : "60"
 	       }
         }
