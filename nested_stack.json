@@ -4,7 +4,7 @@
         "myStack" : {
 	       "Type" : "AWS::CloudFormation::Stack",
 	       "Properties" : {
-	        "TemplateURL" : "https://raw.githubusercontent.com/DinkuSarmah/cfn-examples/master/s3-template.json",
+	        "TemplateURL" : "https://cfn-deploy-resources.s3.us-west-2.amazonaws.com/s3-template.json",
               "TimeoutInMinutes" : "60"
 	       }
         }
